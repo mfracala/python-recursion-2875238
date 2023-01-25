@@ -5,11 +5,14 @@ Robin Andrews - https://compucademy.net/
 
 
 def factorial_iterative_while(n):  # Condition-controlled version
-    pass
-
+    result =1
+    while n >= 1:
+        result = result * n
+        n -= 1
+    return result
 
 # Let's do some basic testing
-assert factorial_iterative_while(4) == 24
+assert factorial_iterative_while(4) == 24 #if you get anything other than the assertion, get an error, note that putting 'pass' in a function allows it to be empty
 assert factorial_iterative_while(6) == 720
 assert factorial_iterative_while(1) == 1
 assert factorial_iterative_while(0) == 1
